@@ -4,12 +4,26 @@
 # Desc: Intro Python I
 #
 
-
+import requests
+import psycopg2
+import boto3
 
 
 def ex1():
     message = hello_world()
     print(message)
+
+    # API
+    r = requests.get('http://jsonplaceholder.typicode.com/users/1')
+    print(r.json())
+
+    # S3
+    s3 = boto3.resource('s3')
+    for bucket in s3.buckets.all():
+        print(bucket.name)
+
+    # Database
+    # psycopg2.connect()
 
 
 def ex2():
