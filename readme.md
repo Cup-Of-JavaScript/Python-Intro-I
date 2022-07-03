@@ -6,7 +6,7 @@ Assignments are located [here](assignments.md).
 # Getting Started
 - Clone this repo
 - Open with Intellij:
-  - File >> Open >> opython-intro-I >> opython-intro-I
+  - File >> Open >> python-intro-I
 - Open Terminal window (click on Terminal tab at bottom of IntelliJ)
 - Activate virtual environment: `venv\Scripts\activate.bat`
 - Create a new file called `main.py`
