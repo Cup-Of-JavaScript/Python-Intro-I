@@ -5,44 +5,43 @@
 #
 
 def ex1():
-    r = hello_world()
-    print(r)
+    print("TODO: Ex. 1...")
 
 
 def ex2():
-    print("excerise 2")
+    print("TODO: Ex. 1...")
 
 
 def ex3():
-    print("excerise 3")
+    print("TODO: Ex. 1...")
 
 
 def ex4():
-    print("excerise 4")
+    print("TODO: Ex. 1...")
 
 
 def ex5():
-    print("excerise 5")
+    print("TODO: Ex. 1...")
 
 
 def ex6():
-    print("excerise 6")
+    print("TODO: Ex. 1...")
 
 
 def ex7():
-    print("excerise 7")
+    print("TODO: Ex. 1...")
 
 
 def ex8():
-    print("excerise 8")
+    print("TODO: Ex. 1...")
 
 
 def ex9():
-    print("excerise 9")
+    print("TODO: Ex. 1...")
 
 
 def ex10():
-    print("excerise 10")
+    print("TODO: Ex. 1...")
 
 
 #
