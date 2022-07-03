@@ -14,16 +14,20 @@ def ex1():
     print(message)
 
     # API
-    r = requests.get('http://jsonplaceholder.typicode.com/users/1')
-    print(r.json())
+    # r = requests.get('http://jsonplaceholder.typicode.com/users/1')
+    # print(r.json())
 
     # S3
-    s3 = boto3.resource('s3')
-    for bucket in s3.buckets.all():
-        print(bucket.name)
+    # s3 = boto3.resource('s3')
+    # for bucket in s3.buckets.all():
+    #     print(bucket.name)
 
     # Database
-    # psycopg2.connect()
+    # con = psycopg2.connect(database='stu0', user='postgres', password='Ihgdp51505150!')
+    # cur = con.cursor()
+    # cur.execute('select * from book')
+    # r = cur.fetchall()  # fetchone()
+    # print(r)
 
 
 def ex2():
