@@ -3,5 +3,8 @@
 
 # Getting Started
 - Clone this repo
-- Activate virtual environment: `\venv\Scripts\activate.bat`
-- 
+- Open with Intellij:
+  - File >> Open >> opython-intro-I >> opython-intro-I
+- Activate virtual environment: `venv\Scripts\activate.bat`
+- Press green "play" button at top of IntelliJ 
+
