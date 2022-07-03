@@ -13,7 +13,7 @@ Assignments are located [here](assignments.md).
 - Copy contents of `main.py.template` to `main.py`
 - Update `main.py` with your student id
 - Press green "play" button at top of IntelliJ 
-- Observe the following ouput in the terminal windo
+- Observe `TODO: Ex. 1...` in the terminal window
 
 # Videos
 [Python for Beginners - Mosh (60m)](https://youtu.be/kqtD5dpn9C8)
