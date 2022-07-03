@@ -23,11 +23,17 @@ def ex1():
         print(bucket.name)
 
     # Database
-    con = psycopg2.connect(database='stu0', user='postgres', password='Ihgdp51505150!')
-    cur = con.cursor()
-    cur.execute('select * from book')
-    r = cur.fetchall()  # fetchone()
-    print(r)
+    try:
+        con = psycopg2.connect(database='stu0', user='postgres', password='Ihgdp51505150!')
+        cur = con.cursor()
+        cur.execute('select * from book')
+        r = cur.fetchall()  # fetchone()
+        print(r)
+    except psycopg2.DatabaseError as e:
+        print(f'Error {e}')
+    finally:
+        if con:
+            con.close()
 
 
 def ex2():
