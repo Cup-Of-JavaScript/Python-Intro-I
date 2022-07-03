@@ -5,11 +5,12 @@
 #
 
 def ex1():
-    print("TODO: Ex. 1...")
+    message = hello_world()
+    print(message)
 
 
 def ex2():
-    print("TODO: Ex. 1...")
+    print("TODO: Ex. 2...")
 
 
 def ex3():
@@ -41,6 +42,26 @@ def ex9():
 
 
 def ex10():
+    print("TODO: Ex. 1...")
+
+
+def ex11():
+    print("TODO: Ex. 1...")
+
+
+def ex12():
+    print("TODO: Ex. 1...")
+
+
+def ex13():
+    print("TODO: Ex. 1...")
+
+
+def ex14():
+    print("TODO: Ex. 1...")
+
+
+def ex15():
     print("TODO: Ex. 1...")
 
 
