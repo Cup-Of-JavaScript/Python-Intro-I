@@ -10,11 +10,19 @@ import boto3
 
 
 def ex1():
-    print("TODO: Ex. 1...")
+    hello_world(3)
 
 
 def ex2():
-    print("TODO: Ex. 2...")
+    x = 5
+    y = "test"
+    test(x, y)
+    print(x, y)
+
+
+def test(x, y):
+    x = 20
+    y = "fart"
 
 
 def ex3():
@@ -73,5 +81,8 @@ def ex15():
 # Place your functions here...
 #
 
-def hello_world():
-    return "Hello World from Python."
+def hello_world(num):
+    for x in range(num):
+        print("Hello World from Python!")
+
+

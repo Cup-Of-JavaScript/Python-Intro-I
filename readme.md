@@ -27,6 +27,20 @@ Boolean Type: `bool`
 Binary Types: `bytes`, `bytearray`, `memoryview`
 None Type: `NoneType`
 
+# Call by Value vs Call by Reference
+- Mutable types are passed by reference
+- Immutable types are passed by value (AKA copy)
+- Mutable types:
+  - Lists
+  - Dictionaries
+  - Sets
+- Immutable types:
+  - Integers
+  - Floats
+  - Booleans
+  - Strings
+  - Tuples
+
 # Videos
 - [Python for Beginners - Mosh (60m)](https://youtu.be/kqtD5dpn9C8)
 - [venv (17m)](https://youtu.be/APOPm01BVrk)
