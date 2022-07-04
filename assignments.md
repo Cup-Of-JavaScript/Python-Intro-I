@@ -14,7 +14,7 @@ hello_world("3")
 ```
 
 Output:
-```shell
+```
 Hello World from Python!
 Hello World from Python!
 Hello World from Python!
@@ -32,7 +32,7 @@ print(result)
 ```
 
 Output:
-```shell
+```
 1 2 3
 ```
 
@@ -48,7 +48,7 @@ print(result)
 ```
 
 Output:
-```shell
+```
 3.1
 ```
 
@@ -72,7 +72,7 @@ print(result)
 ```
 
 Ouput:
-```shell
+```
 $11.00
 ```
 
