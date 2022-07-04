@@ -81,15 +81,27 @@ Enter sentence: Hello   there
 Number of Words: 2
 ```
 
-# Ex. 5 
+# Ex. 5 Replace Period
+Create a Python function named `replace_period` that accepts two inputs:
+- A string that represents a sentence
+- The puncuation character that will replace the period in the sentence
 
+Usage
+```python
+sentence = "Test.  This is a test.  Testing."
+sentence2 = replace_period(sentence, "!!!")
+print(sentence2)
+
+```
+Ouput:
+```
+Test!  This is a test!  Testing!
+```
 
 
 # Ex. 6
 
 # Ex. 7 Calculate Total
-
-
 Create a Python function named `calc_total` that accepts an array of ints and a string that represents the sales tax.
 Formatting currency in Python is accomplished in the following manner:
 

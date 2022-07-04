@@ -32,10 +32,13 @@ def ex4():
 
 
 def ex5():
-    print("TODO: Ex. 6...")
+    sentence = "Test.  This is a test.  Testing."
+    sentence2 = replace_period(sentence, "!")
+    print(sentence2)
 
 
 def ex6():
+    # Slicing
     print("TODO: Ex. 6...")
 
 
@@ -126,3 +129,13 @@ def count_words(sentence):
         if len(word) > 0:
             retval += 1
     return "Number of words: " + str(retval)
+
+
+def replace_period(sentence, puncuation):
+    retval = ""
+    for letter in sentence:
+        if letter == ".":
+            retval += puncuation
+        else:
+            retval += letter
+    return retval
