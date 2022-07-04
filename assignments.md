@@ -84,7 +84,7 @@ Number of Words: 2
 # Ex. 5 Replace Period
 Create a Python function named `replace_period` that accepts two inputs:
 - A string that represents a sentence
-- The puncuation character that will replace the period in the sentence
+- The punctuation character that will replace the period in the sentence
 
 Usage
 ```python
