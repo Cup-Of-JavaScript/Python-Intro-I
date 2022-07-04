@@ -185,6 +185,8 @@ while True:
     print(result)
 ```
 
+The calculator prompts the user for two numbers and the operation to perform on these two numbers.
+
 Example Output
 ```
 Enter number 1: 1
