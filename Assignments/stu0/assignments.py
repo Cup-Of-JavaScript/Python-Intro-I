@@ -14,16 +14,22 @@ def ex1():
 
 
 def ex2():
-    x = [1, 2, 3]
-    result = array_to_string(x)
+    array = [1, 2, 3]
+    result = array_to_string(array)
     print(result)
 
 
-
-
-
 def ex3():
-    print("TODO: Ex. 3...")
+    array = [1.0, 1.1, "1"]
+    result = add_numbers(array)
+    print(result)
+
+
+def add_numbers(array):
+    retval = 0.0
+    for i in array:
+        retval += float(i)
+    return retval
 
 
 def ex4():

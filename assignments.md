@@ -25,8 +25,8 @@ The function must use a for loop and must cast the `ints` to `strings`.
 
 Usage:
 ```python
-x = [1, 2, 3]
-result = array_to_string(x)
+array = [1, 2, 3]
+result = array_to_string(array)
 print(result)
 ```
 
@@ -35,8 +35,21 @@ Output:
 1 2 3
 ```
 
+# Ex. 3 Add Numbers
+Create a Python function named `add_numbers` that accepts an array of numeric types and returns the sum of 
+them as a float value. The function must use a for loop and must cast the numbers to `floats`.
 
-# Ex. 3
+Usage:
+```python
+array = [1.0, 1.1, "1"]
+result = add_numbers(array)
+print(result)
+```
+
+Output:
+```shell
+3.1
+```
 
 # Ex. 4
 
