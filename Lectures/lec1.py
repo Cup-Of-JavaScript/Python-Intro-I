@@ -4,6 +4,7 @@ def lec1():
     # id()
     # https://www.w3schools.com/python/python_datatypes.asp
     # For loops
+    # string slicing
 
 
 if __name__ == '__main__': # Dunder

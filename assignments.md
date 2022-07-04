@@ -1,4 +1,5 @@
 # Python Intro I Assignments
+Submit a PR for each assignment.
 
 # Ex. 1 Hello World
 Create a Python function named `hello_world` that accepts a string 
@@ -51,7 +52,29 @@ Output:
 3.1
 ```
 
-# Ex. 4
+# Ex. 4 Calculate Total
+Create a Python function named `calc_total` that accepts an array of ints and a string that represents the sales tax.
+Formatting currency in Python is accomplished in the following manner:
+
+```python
+number = 1.00
+dollar_number = "${:,.2f}".format(number)
+```
+
+[String slicing](https://www.digitalocean.com/community/tutorials/how-to-index-and-slice-strings-in-python-3) may help you.
+
+Usage:
+```python
+array = [2.00, 4.00, 4.00]
+tax = "10%"
+result = calc_total(array, tax)
+print(result)
+```
+
+Ouput:
+```shell
+$11.00
+```
 
 # Ex. 5
 
@@ -65,3 +88,12 @@ Output:
 
 # Ex. 10
 
+# Ex. 11
+
+# Ex. 12
+
+# Ex. 13
+
+# Ex. 14
+
+# Ex. 15

@@ -25,15 +25,11 @@ def ex3():
     print(result)
 
 
-def add_numbers(array):
-    retval = 0.0
-    for i in array:
-        retval += float(i)
-    return retval
-
-
 def ex4():
-    print("TODO: Ex. 4...")
+    array = [2.00, 4.00, 4.00]
+    tax = "10%"
+    result = calc_total(array, tax)
+    print(result)
 
 
 def ex5():
@@ -95,3 +91,27 @@ def array_to_string(array):
     for i in array:
         retval += (str(i) + " ")
     return retval
+
+
+def add_numbers(array):
+    retval = 0.0
+    for i in array:
+        retval += float(i)
+    return retval
+
+
+def calc_total(array, tax):
+    retval = 0.0
+
+    # Calculate total.
+    for i in array:
+        retval += i
+
+    # Add taxes.
+    tax_rate = float(tax[:-1])/100
+    taxes = retval * tax_rate
+    retval += taxes
+
+    # Format output.
+    retval = "${:,.2f}".format(retval)
+    return retval;

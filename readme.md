@@ -48,4 +48,4 @@ None Type: `NoneType`
 
 # Links
 - [W3 Schools]()
-
+- [String Slicing](https://www.digitalocean.com/community/tutorials/how-to-index-and-slice-strings-in-python-3)
