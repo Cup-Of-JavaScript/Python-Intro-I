@@ -251,7 +251,26 @@ Ouput:
 {'three': 3, 'two': 2, 'one': 1}
 ```
 
-# Ex. 13
+# Ex. 13 Frame It
+Create a Python function called `frame_it` that is consumed in the following manner:
+
+```python
+    wordlist = ["Hello", "World", "in", "a", "frame"]
+    frame_it(wordlist)
+```
+
+The function returns nothing and displays the list of words on the terminal in a frame:
+
+Ouput:
+```
+*********
+* Hello *
+* World *
+* in    *
+* a     *
+* frame *
+*********
+```
 
 # Ex. 14
 

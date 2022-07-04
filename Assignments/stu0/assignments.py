@@ -76,7 +76,19 @@ def ex12():
 
 
 def ex13():
-    print("TODO: Ex. 13...")
+    wordlist = ["Hello", "World", "in", "a", "frame"]
+    frame_it(wordlist)
+
+
+def frame_it(array):
+    len_longest_word = 0
+    for word in array:
+        if len(word) > len_longest_word:
+            len_longest_word = len(word)
+    print(create_separator(len_longest_word))
+    for word in array:
+        print(create_text_line(word, len_longest_word))
+    print(create_separator(len_longest_word))
 
 
 def ex14():
@@ -210,3 +222,21 @@ def word_histogram(sentence):
             count += 1
             word_dict[word] = count
     print(word_dict)
+
+
+def create_separator(length):
+    retval = ''
+    for _ in range(length + 4):
+        retval += '*'
+    return retval
+
+
+def create_text_line(word, len_longest_word):
+    retval = ''
+    end_string = ''
+    num_spaces_to_add = (len_longest_word - len(word)) + 1
+    for _ in range(num_spaces_to_add):
+        end_string += ' '
+    end_string += '*'
+    retval = f'* {word}{end_string}'
+    return retval
