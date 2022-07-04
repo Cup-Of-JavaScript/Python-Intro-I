@@ -10,19 +10,16 @@ import boto3
 
 
 def ex1():
-    hello_world(3)
+    hello_world("3")
 
 
 def ex2():
-    x = 5
-    y = "test"
-    test(x, y)
-    print(x, y)
+    x = [1, 2, 3]
+    result = array_to_string(x)
+    print(result)
 
 
-def test(x, y):
-    x = 20
-    y = "fart"
+
 
 
 def ex3():
@@ -82,7 +79,13 @@ def ex15():
 #
 
 def hello_world(num):
+    num = int(num)
     for x in range(num):
         print("Hello World from Python!")
 
 
+def array_to_string(array):
+    retval = ""
+    for i in array:
+        retval += (str(i) + " ")
+    return retval
