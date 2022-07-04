@@ -52,7 +52,44 @@ Output:
 3.1
 ```
 
-# Ex. 4 Calculate Total
+# Ex. 4 Count Words
+Create a Python function named `count_words` that counts the number of words that has been entered by the user.
+The function must be able to handle any number of spaces between words.
+
+Usage:
+```python
+sentence = input("Enter sentence: ")
+num_words = count_words(sentence)
+print(num_words)
+```
+
+Example Output #1:
+```
+Enter sentence: This is a test
+Number of Words: 4
+```
+
+Example Output #2:
+```
+Enter sentence: This  is   a    test
+Number of Words: 4
+```
+
+Example Output #3:
+```
+Enter sentence: Hello   there
+Number of Words: 2
+```
+
+# Ex. 5 
+
+
+
+# Ex. 6
+
+# Ex. 7 Calculate Total
+
+
 Create a Python function named `calc_total` that accepts an array of ints and a string that represents the sales tax.
 Formatting currency in Python is accomplished in the following manner:
 
@@ -75,12 +112,6 @@ Ouput:
 ```
 $11.00
 ```
-
-# Ex. 5
-
-# Ex. 6
-
-# Ex. 7
 
 # Ex. 8
 

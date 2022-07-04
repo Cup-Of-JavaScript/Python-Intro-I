@@ -26,14 +26,13 @@ def ex3():
 
 
 def ex4():
-    array = [2.00, 4.00, 4.00]
-    tax = "10%"
-    result = calc_total(array, tax)
-    print(result)
+    sentence = input("Enter sentence: ")
+    num_words = count_words(sentence)
+    print(num_words)
 
 
 def ex5():
-    print("TODO: Ex. 5...")
+    print("TODO: Ex. 6...")
 
 
 def ex6():
@@ -41,7 +40,10 @@ def ex6():
 
 
 def ex7():
-    print("TODO: Ex. 7...")
+    array = [2.00, 4.00, 4.00]
+    tax = "10%"
+    result = calc_total(array, tax)
+    print(result)
 
 
 def ex8():
@@ -115,3 +117,12 @@ def calc_total(array, tax):
     # Format output.
     retval = "${:,.2f}".format(retval)
     return retval;
+
+
+def count_words(sentence):
+    retval = 0
+    word_array = sentence.split(" ")
+    for word in word_array:
+        if len(word) > 0:
+            retval += 1
+    return "Number of words: " + str(retval)
