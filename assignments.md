@@ -61,7 +61,7 @@ number = 1.00
 dollar_number = "${:,.2f}".format(number)
 ```
 
-[String slicing](https://www.digitalocean.com/community/tutorials/how-to-index-and-slice-strings-in-python-3) may help you.
+[String slicing](https://www.digitalocean.com/community/tutorials/how-to-index-and-slice-strings-in-python-3) might help you convert "10%" to a `float` value.
 
 Usage:
 ```python
