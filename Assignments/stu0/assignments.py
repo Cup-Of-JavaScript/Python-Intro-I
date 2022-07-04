@@ -43,13 +43,6 @@ def ex6():
     print(r)
 
 
-def slice_it(array):
-    retval = ""
-    for w in array:
-        retval += w[0:2]
-    return retval
-
-
 def ex7():
     array = [2.00, 4.00, 4.00]
     tax = "10%"
@@ -58,10 +51,21 @@ def ex7():
 
 
 def ex8():
-    print("TODO: Ex. 8...")
+    print(f_to_c(22))
+    print(c_to_f(-6))
 
 
-def ex9():
+def f_to_c(value):
+    celsius = round((value-32) * (5/9))
+    return f'{str(value)} degrees Fahrenheit is {celsius} degrees Celsius.'
+
+
+def c_to_f(value):
+    far = round(value * 9/5 + 32)
+    return f'{str(value)} degrees Celsius is {far} degrees Fahrenheit.'
+
+
+def ex9(): # Vowel counter
     print("TODO: Ex. 9...")
 
 
@@ -113,23 +117,6 @@ def add_numbers(array):
     return retval
 
 
-def calc_total(array, tax):
-    retval = 0.0
-
-    # Calculate total.
-    for i in array:
-        retval += i
-
-    # Add taxes.
-    tax_rate = float(tax[:-1])/100
-    taxes = retval * tax_rate
-    retval += taxes
-
-    # Format output.
-    retval = "${:,.2f}".format(retval)
-    return retval;
-
-
 def count_words(sentence):
     retval = 0
     word_array = sentence.split(" ")
@@ -147,3 +134,28 @@ def replace_period(sentence, puncuation):
         else:
             retval += letter
     return retval
+
+
+def slice_it(array):
+    retval = ""
+    for w in array:
+        retval += w[0:2]
+    return retval
+
+
+def calc_total(array, tax):
+    retval = 0.0
+
+    # Calculate total.
+    for i in array:
+        retval += i
+
+    # Add taxes.
+    tax_rate = float(tax[:-1])/100
+    taxes = retval * tax_rate
+    retval += taxes
+
+    # Format output.
+    retval = "${:,.2f}".format(retval)
+    return retval;
+

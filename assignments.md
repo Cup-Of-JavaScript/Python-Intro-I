@@ -140,7 +140,25 @@ Ouput:
 $11.00
 ```
 
-# Ex. 8
+# Ex. 8 Temp Converter
+Create two python functions:
+- `c_to_f` : Converts from Celsius to Fahrenheit
+- `f_to_c` : Converts from Fahrenheit to Celsius
+
+These functions must use a Python F-String to return the following output:
+
+Usage:
+```
+print(f_to_c(22))
+print(c_to_f(-6))
+```
+
+```
+22 degrees Fahrenheit is -6 degrees Celsius.
+-6 degrees Celsius is 21 degress Fahrenheit.
+```
+
+[F-String](https://www.geeksforgeeks.org/formatted-string-literals-f-strings-python/)
 
 # Ex. 9
 
