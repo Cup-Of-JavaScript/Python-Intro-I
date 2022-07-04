@@ -40,6 +40,7 @@ None Type: `NoneType`
   - Booleans
   - Strings
   - Tuples
+  - Frozenset
 
 # Videos
 - [Python for Beginners - Mosh (60m)](https://youtu.be/kqtD5dpn9C8)
