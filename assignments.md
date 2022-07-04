@@ -98,19 +98,34 @@ Ouput:
 Test!  This is a test!  Testing!
 ```
 
+# Ex. 6 Slice It
+Create a Python function named `calc_total` that accepts an array `strings` and returns the first two letters of every 
+word.
 
-# Ex. 6
+[String slicing](https://www.digitalocean.com/community/tutorials/how-to-index-and-slice-strings-in-python-3)
+
+Usage:
+```python
+array = ["this", "is", "another", "test"]
+r = slice_it(array)
+print(r)
+```
+
+Ouput:
+```
+thisante
+```
 
 # Ex. 7 Calculate Total
 Create a Python function named `calc_total` that accepts an array of ints and a string that represents the sales tax.
 Formatting currency in Python is accomplished in the following manner:
 
+Currency example:
 ```python
 number = 1.00
 dollar_number = "${:,.2f}".format(number)
+print(number)
 ```
-
-[String slicing](https://www.digitalocean.com/community/tutorials/how-to-index-and-slice-strings-in-python-3) might help you convert "10%" to a `float` value.
 
 Usage:
 ```python

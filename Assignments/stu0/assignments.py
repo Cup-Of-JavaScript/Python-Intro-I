@@ -38,8 +38,16 @@ def ex5():
 
 
 def ex6():
-    # Slicing
-    print("TODO: Ex. 6...")
+    array = ["this", "is", "another", "test"]
+    r = slice_it(array)
+    print(r)
+
+
+def slice_it(array):
+    retval = ""
+    for w in array:
+        retval += w[0:2]
+    return retval
 
 
 def ex7():
