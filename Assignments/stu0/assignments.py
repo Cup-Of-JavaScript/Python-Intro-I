@@ -55,18 +55,10 @@ def ex8():
     print(c_to_f(-6))
 
 
-def f_to_c(value):
-    celsius = round((value-32) * (5/9))
-    return f'{str(value)} degrees Fahrenheit is {celsius} degrees Celsius.'
-
-
-def c_to_f(value):
-    far = round(value * 9/5 + 32)
-    return f'{str(value)} degrees Celsius is {far} degrees Fahrenheit.'
-
-
-def ex9(): # Vowel counter
-    print("TODO: Ex. 9...")
+def ex9():
+    sentence = "This is a test"
+    num_vowels = vowel_counter(sentence)
+    print(num_vowels)
 
 
 def ex10():
@@ -159,3 +151,21 @@ def calc_total(array, tax):
     retval = "${:,.2f}".format(retval)
     return retval;
 
+
+def f_to_c(value):
+    celsius = round((value-32) * (5/9))
+    return f'{str(value)} degrees Fahrenheit is {celsius} degrees Celsius.'
+
+
+def c_to_f(value):
+    far = round(value * 9/5 + 32)
+    return f'{str(value)} degrees Celsius is {far} degrees Fahrenheit.'
+
+
+def vowel_counter(sentence):
+    retval = 0
+    vowels = "aeiou"
+    for letter in sentence:
+        if letter in vowels:
+            retval += 1
+    return f"Number of vowels: {retval}"

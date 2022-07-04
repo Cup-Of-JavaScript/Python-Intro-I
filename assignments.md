@@ -141,7 +141,7 @@ $11.00
 ```
 
 # Ex. 8 Temp Converter
-Create two python functions:
+Create two Python functions:
 - `c_to_f` : Converts from Celsius to Fahrenheit
 - `f_to_c` : Converts from Fahrenheit to Celsius
 
@@ -160,7 +160,20 @@ print(c_to_f(-6))
 
 
 # Ex. 9 Vowel Counter
+Create a Python function named `vowel_counter` that accepts a sentence and returns the number of vowels (forget
+about "y").  Use a Python F-String in this function.
 
+Usage:
+```
+sentence = "This is a test"
+num_vowels = vowel_counter(sentence)
+print(num_vowels)
+```
+
+Ouput:
+```
+Number of vowels: 4
+```
 
 
 # Ex. 10
