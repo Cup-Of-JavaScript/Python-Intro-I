@@ -164,7 +164,7 @@ Create a Python function named `vowel_counter` that accepts a sentence and retur
 about "y").  Use a Python F-String in this function.
 
 Usage:
-```
+```python
 sentence = "This is a test"
 num_vowels = vowel_counter(sentence)
 print(num_vowels)
@@ -213,7 +213,7 @@ Create a Python function called `diagonal_printer` that accepts a string and pri
 diagonally as illustrated below.
 
 Usage:
-```
+```python
 diagonal_printer("This is a test")
 ```
 
@@ -255,8 +255,8 @@ Ouput:
 Create a Python function called `frame_it` that is consumed in the following manner:
 
 ```python
-    wordlist = ["Hello", "World", "in", "a", "frame"]
-    frame_it(wordlist)
+wordlist = ["Hello", "World", "in", "a", "frame"]
+frame_it(wordlist)
 ```
 
 The function returns nothing and displays the list of words on the terminal in a frame:
@@ -272,6 +272,3 @@ Ouput:
 *********
 ```
 
-# Ex. 14
-
-# Ex. 15
