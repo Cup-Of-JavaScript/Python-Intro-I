@@ -68,7 +68,17 @@ def ex10():
 
 
 def ex11():
-    print("TODO: Ex. 11...")
+    diagonal_printer("This is a test")
+
+
+def diagonal_printer(input_string):
+    my_word_list = input_string.split(' ')
+    for word in my_word_list:
+        for idx in range(len(word)):
+            padding = ''
+            for _ in range(idx):
+                padding += ' '
+            print(f'{padding}{word[idx]}')
 
 
 def ex12():

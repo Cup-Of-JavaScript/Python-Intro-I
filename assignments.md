@@ -208,8 +208,32 @@ Enter operation (+, *, /, -): -
 
 ```
 
+# Ex. 11 Diagonal  Printer
+Create a Python function called `diagonal_printer` that accepts a string and prints each word 
+diagonally as illustrated below.
 
-# Ex. 11
+Usage:
+```
+diagonal_printer("This is a test")
+```
+
+Output:
+```
+Enter text: this is a test
+t
+ h
+  i
+   s
+i
+ s
+a
+t
+ e
+  s
+   t
+
+```
+
 
 # Ex. 12
 
