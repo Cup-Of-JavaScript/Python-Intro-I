@@ -235,7 +235,21 @@ t
 ```
 
 
-# Ex. 12
+# Ex. 12 Word Histogram
+Create a python function called `word_histogram` that counts the number of words in sentence.
+This function uses a dictionary to count the reoccurances of each word.  The function displays
+the contents of the dictionary on the console.
+
+Usage:
+```python
+word_histogram("three three three two two one")
+
+```
+
+Ouput:
+```
+{'three': 3, 'two': 2, 'one': 1}
+```
 
 # Ex. 13
 

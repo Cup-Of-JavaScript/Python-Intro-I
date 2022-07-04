@@ -72,7 +72,7 @@ def ex11():
 
 
 def ex12():
-    print("TODO: Ex. 12...")
+    word_histogram("three three three two two one")
 
 
 def ex13():
@@ -197,3 +197,16 @@ def diagonal_printer(input_string):
             for _ in range(idx):
                 padding += ' '
             print(f'{padding}{word[idx]}')
+
+
+def word_histogram(sentence):
+    word_dict = {}
+    words = sentence.split(" ")
+    for word in words:
+        count = word_dict.get(word)
+        if count is None:
+            word_dict[word] = 1
+        else:
+            count += 1
+            word_dict[word] = count
+    print(word_dict)
