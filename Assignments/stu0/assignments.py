@@ -10,30 +10,7 @@ import boto3
 
 
 def ex1():
-    message = hello_world()
-    print(message)
-
-    # API
-    r = requests.get('http://jsonplaceholder.typicode.com/users/1')
-    print(r.json())
-
-    # S3
-    s3 = boto3.resource('s3')
-    for bucket in s3.buckets.all():
-        print(bucket.name)
-
-    # Database
-    try:
-        con = psycopg2.connect(database='stu0', user='postgres', password='Ihgdp51505150!')
-        cur = con.cursor()
-        cur.execute('select * from book')
-        r = cur.fetchall()  # fetchone()
-        print(r)
-    except psycopg2.DatabaseError as e:
-        print(f'Error {e}')
-    finally:
-        if con:
-            con.close()
+    print("TODO: Ex. 1...")
 
 
 def ex2():
@@ -41,55 +18,55 @@ def ex2():
 
 
 def ex3():
-    print("TODO: Ex. 1...")
+    print("TODO: Ex. 3...")
 
 
 def ex4():
-    print("TODO: Ex. 1...")
+    print("TODO: Ex. 4...")
 
 
 def ex5():
-    print("TODO: Ex. 1...")
+    print("TODO: Ex. 5...")
 
 
 def ex6():
-    print("TODO: Ex. 1...")
+    print("TODO: Ex. 6...")
 
 
 def ex7():
-    print("TODO: Ex. 1...")
+    print("TODO: Ex. 7...")
 
 
 def ex8():
-    print("TODO: Ex. 1...")
+    print("TODO: Ex. 8...")
 
 
 def ex9():
-    print("TODO: Ex. 1...")
+    print("TODO: Ex. 9...")
 
 
 def ex10():
-    print("TODO: Ex. 1...")
+    print("TODO: Ex. 10...")
 
 
 def ex11():
-    print("TODO: Ex. 1...")
+    print("TODO: Ex. 11...")
 
 
 def ex12():
-    print("TODO: Ex. 1...")
+    print("TODO: Ex. 12...")
 
 
 def ex13():
-    print("TODO: Ex. 1...")
+    print("TODO: Ex. 13...")
 
 
 def ex14():
-    print("TODO: Ex. 1...")
+    print("TODO: Ex. 14...")
 
 
 def ex15():
-    print("TODO: Ex. 1...")
+    print("TODO: Ex. 15...")
 
 
 #

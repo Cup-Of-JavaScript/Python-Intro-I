@@ -1,3 +1,9 @@
+#
+# File: lec6.py
+# Date: 7/4/2022
+# Desc: Data access lecture
+#
+
 import requests
 import psycopg2
 import boto3
