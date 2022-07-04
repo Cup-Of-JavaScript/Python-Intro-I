@@ -176,7 +176,36 @@ Number of vowels: 4
 ```
 
 
-# Ex. 10
+# Ex. 10 Calculator
+Create a Python function named `calculator` that is consumed in the following manner:
+
+```python
+while True:
+    result = calculator()
+    print(result)
+```
+
+Example Output
+```
+Enter number 1: 1
+Enter number 2: 2
+Enter operation (+, *, /, -): +
+3
+Enter number 1: 3
+Enter number 2: 2
+Enter operation (+, *, /, -): *
+6
+Enter number 1: 10
+Enter number 2: 5
+Enter operation (+, *, /, -): /
+2.0
+Enter number 1: 6
+Enter number 2: 3
+Enter operation (+, *, /, -): -
+3
+
+```
+
 
 # Ex. 11
 

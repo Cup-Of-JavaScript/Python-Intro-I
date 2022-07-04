@@ -62,7 +62,9 @@ def ex9():
 
 
 def ex10():
-    print("TODO: Ex. 10...")
+    while True:
+        result = calculator()
+        print(result)
 
 
 def ex11():
@@ -169,3 +171,19 @@ def vowel_counter(sentence):
         if letter in vowels:
             retval += 1
     return f"Number of vowels: {retval}"
+
+
+def calculator():
+    retval = 0
+    num1 = int(input("Enter number 1: "))
+    num2 = int(input("Enter number 2: "))
+    operation = input("Enter operation (+, *, /, -): ")
+    if operation == "+":
+        retval = num1 + num2
+    elif operation == "*":
+        retval = num1 * num2
+    elif operation == "/":
+        retval = num1 / num2
+    elif operation == "-":
+        retval = num1 - num2
+    return retval
