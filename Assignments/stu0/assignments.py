@@ -71,16 +71,6 @@ def ex11():
     diagonal_printer("This is a test")
 
 
-def diagonal_printer(input_string):
-    my_word_list = input_string.split(' ')
-    for word in my_word_list:
-        for idx in range(len(word)):
-            padding = ''
-            for _ in range(idx):
-                padding += ' '
-            print(f'{padding}{word[idx]}')
-
-
 def ex12():
     print("TODO: Ex. 12...")
 
@@ -197,3 +187,13 @@ def calculator():
     elif operation == "-":
         retval = num1 - num2
     return retval
+
+
+def diagonal_printer(input_string):
+    my_word_list = input_string.split(' ')
+    for word in my_word_list:
+        for idx in range(len(word)):
+            padding = ''
+            for _ in range(idx):
+                padding += ' '
+            print(f'{padding}{word[idx]}')
