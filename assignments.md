@@ -21,7 +21,7 @@ Hello World from Python!
 
 # Ex. 2 Array to String
 Create a Python function named `array_to_string` that accepts an array of `ints` and returns a string. 
-The function must use a for loop.
+The function must use a for loop and must cast the `ints` to `strings`.
 
 Usage:
 ```python
