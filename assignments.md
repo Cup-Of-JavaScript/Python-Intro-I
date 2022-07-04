@@ -89,7 +89,7 @@ Create a Python function named `replace_period` that accepts two inputs:
 Usage
 ```python
 sentence = "Test.  This is a test.  Testing."
-sentence2 = replace_period(sentence, "!!!")
+sentence2 = replace_period(sentence, "!")
 print(sentence2)
 
 ```
