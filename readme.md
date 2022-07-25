@@ -10,15 +10,16 @@ Assignments are located [here](assignments.md).
   - Check checkbox Trust Projects in...
 - Open Terminal window (click on Terminal tab at bottom of IntelliJ)
 - Create virtual environment: `python -m venv venv`
-  -  You should see a new `venv` directory in the project
+  - You should see a new `venv` directory in the project
 - Activate virtual environment: `venv\Scripts\activate.bat`
-  -  You should see `(env)` in the terminal windows
+  - You should see `(env)` in the terminal windows
 - Install dependecies: `pip install -r requirements.txt`
 - Create a new file called `main.py`
 - Copy contents of `main.py.template` to `main.py`
 - Update `main.py` with your student id
-- Edit Configurations... (left of green arrow)
-  - Script path: `C:\vc\gitlab\python-intro-I\python-intro-I\main.py`
+- Add Configuration ... Dropdown: Right of green hammer at the top
+  - Click "+" and select Python
+  - Script path: select your `main.py` file
   - Use specified interpreter: `Python 3.10`
 - Press green "play" button at top of IntelliJ 
 - Observe `TODO: Ex. 1...` in the terminal window
