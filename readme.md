@@ -47,5 +47,5 @@ None Type: `NoneType`
 - [venv (17m)](https://youtu.be/APOPm01BVrk)
 
 # Links
-- [W3 Schools]()
+- [W3 Schools](https://www.w3schools.com/python/python_intro.asp)
 - [String Slicing](https://www.digitalocean.com/community/tutorials/how-to-index-and-slice-strings-in-python-3)
