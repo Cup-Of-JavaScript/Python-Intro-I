@@ -17,10 +17,11 @@ Assignments are located [here](assignments.md).
 - Create a new file called `main.py`
 - Copy contents of `main.py.template` to `main.py`
 - Update `main.py` with your student id
-- Add Configuration ... Dropdown: Right of green hammer at the top
+- Add Configuration ... Dropdown (Located at the right of green hammer at the top of IDE)
   - Click "+" and select Python
+  - Name: Python Intro I
   - Script path: select your `main.py` file
-  - Use specified interpreter: `Python 3.10`
+  - Check: Use specified interpreter: `Python 3.10`
 - Press green "play" button at top of IntelliJ 
 - Observe `TODO: Ex. 1...` in the terminal window
 
