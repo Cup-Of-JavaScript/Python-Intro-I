@@ -18,14 +18,14 @@
 ./idea/**/gradle.xml
 ./idea/**/libraries
 
-./Assignments/stu1/__pycache__/*
-./Assignments/stu3/__pycache__/*
-./Assignments/stu5/__pycache__/*
-./Assignments/stu6/__pycache__/*
-./Assignments/stu7/__pycache__/*
-./Assignments/stu8/__pycache__/*
-./Assignments/stu9/__pycache__/*
-./Assignments/stu10/__pycache__/*
+Assignments/stu1/__pycache__/
+Assignments/stu3/__pycache__/
+Assignments/stu5/__pycache__/
+Assignments/stu6/__pycache__/
+Assignments/stu7/__pycache__/
+Assignments/stu8/__pycache__/
+Assignments/stu9/__pycache__/
+Assignments/stu10/__pycache__/
 
 main.py
 venv
