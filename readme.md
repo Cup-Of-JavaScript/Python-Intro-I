@@ -4,8 +4,8 @@ Introduction into Python.
 Assignments are located [here](assignments.md).
 
 # Getting Started
-- Clone this repo
-- Open with Intellij:
+- Clone this repo into a new directory
+- Open this directory with Intellij:
   - File >> Open >> python-intro-I
 - Open Terminal window (click on Terminal tab at bottom of IntelliJ)
 - Create virtual environment: `python -m venv venv`
@@ -21,14 +21,14 @@ Assignments are located [here](assignments.md).
 - Observe `TODO: Ex. 1...` in the terminal window
 
 # Data Types
-Text Type: `str`
-Numeric Types: `int`, `float`, `complex`
-Sequence Types:	`list`, `tuple`, `range`
-Mapping Type: `dict`
-Set Types: `set`, `frozenset`
-Boolean Type: `bool`
-Binary Types: `bytes`, `bytearray`, `memoryview`
-None Type: `NoneType`
+- Text Type: `str`
+- Numeric Types: `int`, `float`, `complex`
+- Sequence Types:	`list`, `tuple`, `range`
+- Mapping Type: `dict`
+- Set Types: `set`, `frozenset`
+- Boolean Type: `bool`
+- Binary Types: `bytes`, `bytearray`, `memoryview`
+- None Type: `NoneType`
 
 # Call by Value vs Call by Reference
 - Mutable types are passed by reference
