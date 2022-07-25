@@ -14,6 +14,9 @@ Assignments are located [here](assignments.md).
 - Create a new file called `main.py`
 - Copy contents of `main.py.template` to `main.py`
 - Update `main.py` with your student id
+- Edit Configurations... (left of green arrow)
+  - Script path: `C:\vc\gitlab\python-intro-I\python-intro-I\main.py`
+  - Use specified interpreter: `Python 3.10`
 - Press green "play" button at top of IntelliJ 
 - Observe `TODO: Ex. 1...` in the terminal window
 
