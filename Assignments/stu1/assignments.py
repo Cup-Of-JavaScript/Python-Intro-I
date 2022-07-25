@@ -6,7 +6,7 @@
 
 
 def ex1():
-    print("TODO: Ex. 1...ss")
+    print("TODO: Ex. 1...")
 
 
 def ex2():
