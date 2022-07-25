@@ -19,6 +19,10 @@
 ./idea/**/libraries
 
 Assignments/stu1/__pycache__/
+Assignments/stu1/__pycache__/
+Assignments/stu1/__pycache__/*.pyc
+
+
 Assignments/stu3/__pycache__/
 Assignments/stu5/__pycache__/
 Assignments/stu6/__pycache__/
