@@ -1,4 +1,4 @@
 ./idea/workspace.xml
-./runConfigurations/*
+./idea/runConfigurations/*
 main.py
 venv
