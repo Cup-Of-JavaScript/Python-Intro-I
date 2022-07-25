@@ -7,6 +7,7 @@ Assignments are located [here](assignments.md).
 - Clone this repo into a new directory
 - Open this directory with Intellij:
   - File >> Open >> python-intro-I
+  - Trust all files
 - Open Terminal window (click on Terminal tab at bottom of IntelliJ)
 - Create virtual environment: `python -m venv venv`
   -  You should see a new `venv` directory in the project
