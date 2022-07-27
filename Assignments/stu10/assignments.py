@@ -6,7 +6,7 @@
 
 
 def ex1():
-    print(hello_world)
+    hello_world("3")
 
 
 def ex2():
@@ -69,7 +69,7 @@ def ex15():
 # Place your functions here...
 #
 
-def hello_world():
-    world = "Hello World from Python!"
-    for i in range(3):
+def hello_world(a):
+    b = int(a)
+    for b in range(b):
         print("Hello World from Python!")
