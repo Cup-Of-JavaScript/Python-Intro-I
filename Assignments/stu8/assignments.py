@@ -21,7 +21,8 @@ def ex3():
 
 
 def ex4():
-    print("TODO: Ex. 4...")
+    sentence = input("Enter sentence: ")
+    count_words(sentence)
 
 
 def ex5():
@@ -86,3 +87,7 @@ def add_numbers(array):
     for x in array:
         result += float(x)
     print(result)
+
+def count_words(sentence):
+    num_words = len(sentence.split())
+    print("Number of words: ", num_words)
