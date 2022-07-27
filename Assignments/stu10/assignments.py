@@ -10,7 +10,8 @@ def ex1():
 
 
 def ex2():
-    print("TODO: Ex. 2...")
+    array = [1, 2, 3]
+    array_to_string(array)
 
 
 def ex3():
@@ -74,3 +75,9 @@ def hello_world(a):
     b = int(a)
     for b in range(b):
         print("Hello World from Python!")
+
+
+#ex2:
+def array_to_string(array):
+    retval = ' '.join(str(a) for a in array)
+    print(retval)
