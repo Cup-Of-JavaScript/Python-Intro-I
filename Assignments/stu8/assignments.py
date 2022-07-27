@@ -6,7 +6,7 @@
 
 
 def ex1():
-    hello_world("6")
+    hello_world("4")
 
 
 def ex2():
