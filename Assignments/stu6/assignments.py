@@ -8,7 +8,7 @@
 def ex1():
     hello_world = range(3)
     for i in hello_world:
-        print("Hello World from Python")
+        print("Hello World from Python")  # Test
 
 def ex2():
     print("TODO: Ex. 2...")
