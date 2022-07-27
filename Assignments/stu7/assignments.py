@@ -6,7 +6,7 @@
 
 
 def ex1():
-    print("TODO: Ex. 1...")
+    print(hello_world('3'))
 
 
 def ex2():
@@ -69,3 +69,9 @@ def ex15():
 # Place your functions here...
 #
 
+# ex1
+def hello_world (num):
+    i = int(num)
+    for i in range (i):
+        print('Hello World from Python!')
+        # testing branch

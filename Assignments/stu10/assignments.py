@@ -10,11 +10,14 @@ def ex1():
 
 
 def ex2():
-    print("TODO: Ex. 2...")
+    array = [1, 2, 3]
+    array_to_string(array)
 
 
 def ex3():
-    print("TODO: Ex. 3...")
+    array = [1.0, 1.1, "1"]
+    add_numbers(array)
+
 
 
 def ex4():
@@ -74,3 +77,16 @@ def hello_world(a):
     b = int(a)
     for b in range(b):
         print("Hello World from Python!")
+
+
+#ex2:
+def array_to_string(array):
+    retval = ' '.join(str(a) for a in array)
+    print(retval)
+
+#ex3:
+def add_numbers(array):
+    retval = 0
+    for a in array:
+        retval += float(a)
+        print(retval)
