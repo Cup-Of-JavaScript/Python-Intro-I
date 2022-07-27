@@ -6,10 +6,9 @@
 
 
 def ex1():
-    hello_world("3")
-
-
-
+    hello_world = range(3)
+    for i in hello_world:
+        print("Hello World from Python")
 
 def ex2():
     print("TODO: Ex. 2...")
