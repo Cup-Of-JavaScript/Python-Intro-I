@@ -6,8 +6,7 @@
 
 
 def ex1():
-    print("TODO: Ex. 1...")
-
+    print(hello_world())
 
 def ex2():
     print("TODO: Ex. 2...")
@@ -68,4 +67,7 @@ def ex15():
 #
 # Place your functions here...
 #
-
+def hello_world (num):
+    i = int(num)
+    for i in
+    print('Hello World from Python!')
