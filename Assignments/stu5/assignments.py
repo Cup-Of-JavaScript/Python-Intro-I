@@ -20,7 +20,10 @@ def ex2():
 
 
 def ex3():
-    print("TODO: Ex. 3...")
+    array = [1.0, 1.1, "1"]
+    add_numbers(array)
+
+
 
 
 def ex4():
@@ -86,7 +89,11 @@ def array_to_string(array):
         string += ''.join(str(numbers) for numbers in array)
         return string
 
-
+def add_numbers(array):
+    sum =0
+    for numbers in array:
+        sum += float(numbers)
+    print(sum)
 
 
 
