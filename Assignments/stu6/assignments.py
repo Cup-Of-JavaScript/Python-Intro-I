@@ -6,15 +6,12 @@
 
 
 def ex1():
-    hello_world = range(3)
-    for i in hello_world:
-        print("Hello World from Python")
+    hello_world()
 
 
 def ex2():
     array = [1, 2, 3]
-    x = ' '.join(str(s) for s in array)
-    print(x)
+    array_to_string(array)
 
 
 
@@ -73,4 +70,11 @@ def ex15():
 #
 # Place your functions here...
 #
+def array_to_string(array):
+    result = ' '.join(str(x) for x in array)
+    print(result)
 
+def hello_world():
+    hello_world = range(3)
+    for i in hello_world:
+        print("Hello World from Python")
