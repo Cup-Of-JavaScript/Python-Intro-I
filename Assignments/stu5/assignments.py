@@ -43,7 +43,9 @@ def ex5():
 
 def ex6():
     array = ["this", "is", "another", "test"]
-    slice_it(array)
+    r = slice_it(array)
+    print(r)
+
 
 
 
@@ -120,8 +122,9 @@ def replace_period(sentence):
 def slice_it(array):
     retval=""
     for i in array:
-        retval += str(i[:2])
-    print(retval)
+        retval += (str(i[:2]))
+    return retval
+
 
 
 
