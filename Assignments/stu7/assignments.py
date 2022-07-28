@@ -89,6 +89,6 @@ def array_to_string(array):
 def add_numbers(array):
     result = 0
     for i in float(array):
-       result += i
+       result += i(0)
     print(result)
 
