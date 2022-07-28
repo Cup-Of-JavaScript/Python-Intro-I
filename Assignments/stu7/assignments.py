@@ -79,8 +79,6 @@ def hello_world (num):
 
 #ex2
 def array_to_string(array):
-    result = str(array)
-    return result
-# a = [1, 2, 3]
-# print(str(a))
+   result = ' '.join([str(i) for i in array])
+   print(result)
 # print(array_to_string(a))
