@@ -10,23 +10,29 @@ def ex1():
 
 
 def ex2():
-    print("TODO: Ex. 2...")
+    array = [1, 2, 3]
+    array_to_string(array)
 
 
 def ex3():
-    print("TODO: Ex. 3...")
+    array = [1.0, 1.1, "1"]
+    add_numbers(array)
 
 
 def ex4():
-    print("TODO: Ex. 4...")
+    sentence = input("Enter sentence: ")
+    count_words(sentence)
+
 
 
 def ex5():
-    print("TODO: Ex. 5...")
+    sentence = "Test.  This is a test.  Testing."
+    replace_period(sentence)
 
 
 def ex6():
-    print("TODO: Ex. 6...")
+    array = ["this", "is", "another", "test"]
+    slice_it(array)
 
 
 def ex7():
@@ -68,6 +74,35 @@ def ex15():
 #
 # Place your functions here...
 #
+def slice_it(array):
+    slice = "".join(i[:2] for i in array)
+    print(slice)
+
+
+def replace_period(sentence):
+    sen = sentence.replace(".", "!")
+    print(sen)
+
+def count_words(sentence):
+    retval = len(sentence.split())
+    return retval
+
+
+
+def add_numbers(array):
+    retval = 0
+    for a in array:
+        retval += float(a)
+        print(retval)
+
+
+
+
+def array_to_string(array):
+    result = ' '.join(str(x) for x in array)
+    print(result)
+
+
 
 
 def hello_world(x):
