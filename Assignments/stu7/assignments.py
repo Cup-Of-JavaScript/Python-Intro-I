@@ -10,7 +10,8 @@ def ex1():
 
 
 def ex2():
-    print(result)
+    array = [1, 2, 3]
+    print(array_to_string(array))
 
 
 def ex3():
@@ -77,7 +78,6 @@ def hello_world (num):
         # testing branch
 
 #ex2
-array = [1, 2, 3]
 def array_to_string(array):
     result = str(array)
     return result
