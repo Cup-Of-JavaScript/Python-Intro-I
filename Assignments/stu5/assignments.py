@@ -3,6 +3,7 @@
 # Date: 7/3/2022
 # Desc: Intro Python I
 #
+from typing import Any
 
 
 def ex1():
@@ -10,7 +11,12 @@ def ex1():
 
 
 def ex2():
-    print("TODO: Ex. 2...")
+    array = [1, 2, 3]
+    result = array_to_string(array)
+    print(result)
+
+
+
 
 
 def ex3():
@@ -73,4 +79,24 @@ def hello_world(x):
     i =int(x)
     for i in range(i):
         print("Hello World from Python!")
+
+def array_to_string(array):
+    string = ''
+    for numbers in array:
+        string += ''.join(str(numbers) for numbers in array)
+        return string
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
