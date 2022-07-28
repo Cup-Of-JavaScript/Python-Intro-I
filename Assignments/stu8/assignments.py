@@ -30,7 +30,8 @@ def ex5():
     replace_period(sentence)
 
 def ex6():
-    print("TODO: Ex. 6...")
+    array = ["this", "is", "another", "test"]
+    slice_it(array)
 
 
 def ex7():
@@ -95,3 +96,7 @@ def count_words(sentence):
 def replace_period(sentence):
     sentence2 = sentence.replace(".", "!")
     print(sentence2)
+
+def slice_it(array):
+    r = "".join(a[:2] for a in array)
+    print(r)

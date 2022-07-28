@@ -3,7 +3,10 @@ def ex1():
 
 
 def ex2():
-    array_to_string()
+
+    array = [1, 2, 3]
+    array_to_string(array)
+
 
 
 def ex3():
@@ -61,10 +64,12 @@ def ex15():
 #
 # Place your functions here...
 #
+
 def hello_world():
     hello_world = range(3)
     for i in hello_world:
         print("Hello World from Python")
+
 
 def array_to_string():
     array = [1, 2, 3]
@@ -77,4 +82,5 @@ def add_numbers():
     for x in array:
         total += float(x)
     print(total)
+
 

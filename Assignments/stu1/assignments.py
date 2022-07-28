@@ -16,15 +16,21 @@ def ex2():
 
 
 def ex3():
-    print("TODO: Ex. 3...")
+    array = [1.0, 1.1, "1"]
+    result = add_numbers(array)
+    print(result)
 
 
 def ex4():
-    print("TODO: Ex. 4...")
+    sentence = input("Enter sentence: ")
+    num_words = count_words(sentence)
+    print(num_words)
 
 
 def ex5():
-    print("TODO: Ex. 5...")
+    sentence = "Test.  This is a test.  Testing."
+    sentence2 = replace_period(sentence, "!")
+    print(sentence2)
 
 
 def ex6():
@@ -82,3 +88,17 @@ def array_to_string(array):
         my_string += ' '
         my_string += str(array[x])
     return my_string
+
+def add_numbers(array):
+    list = []
+    for x in array:
+        list.append(float(x))
+    return sum(list)
+
+def count_words(sentence):
+    word_count = "Number of words: "
+    return f'{word_count}{len(sentence.split())}'
+
+def replace_period(sentence, x):
+    punct_replacement = sentence.maketrans(".", "!")
+    return sentence.translate(punct_replacement)
