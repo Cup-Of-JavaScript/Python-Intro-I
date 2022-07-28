@@ -6,11 +6,16 @@
 
 
 def ex1():
-    print("TODO: Ex. 1...")
+    hello_world = range(3)
+    for i in hello_world:
+        print("Hello World from Python")
 
 
 def ex2():
-    print("TODO: Ex. 2...")
+    array = [1, 2, 3]
+    x = ' '.join(str(s) for s in array)
+    print(x)
+
 
 
 def ex3():
