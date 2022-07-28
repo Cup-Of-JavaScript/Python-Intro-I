@@ -19,7 +19,6 @@ def ex3():
     add_numbers(array)
 
 
-
 def ex4():
     sentence = input("Enter sentence: ")
     count_words(sentence)
@@ -29,13 +28,16 @@ def ex5():
     sentence = "Test.  This is a test.  Testing."
     replace_period(sentence)
 
+
 def ex6():
     array = ["this", "is", "another", "test"]
     slice_it(array)
 
 
 def ex7():
-    print("TODO: Ex. 7...")
+    array = [2.00, 4.00, 4.00]
+    tax = "10%"
+    calc_total(array, tax)
 
 
 def ex8():
@@ -79,24 +81,38 @@ def hello_world(y):
     for x in range(x):
         print("Hello World from Python!")
 
+
 def array_to_string(array):
     result = ' '.join(str(x) for x in array)
     print(result)
 
+
 def add_numbers(array):
-    result=0
+    result = 0
     for x in array:
         result += float(x)
     print(result)
+
 
 def count_words(sentence):
     num_words = len(sentence.split())
     print("Number of words: ", num_words)
 
+
 def replace_period(sentence):
     sentence2 = sentence.replace(".", "!")
     print(sentence2)
 
+
 def slice_it(array):
     r = "".join(a[:2] for a in array)
     print(r)
+
+
+def calc_total(array, tax):
+    result = 0
+    for x in array:
+        result += float(x)
+    number = result * int(tax[:1])*.10
+    dollar_number = "${:,.2f}".format(number + result)
+    print(dollar_number)
