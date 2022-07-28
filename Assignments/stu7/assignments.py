@@ -92,3 +92,11 @@ def add_numbers(array):
        result += float(i)
     print(result)
 
+
+#ex4
+def add_numbers(array):
+    result = 0
+    for i in (array):
+        result += float(i)
+    print(result)
+
