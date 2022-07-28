@@ -22,7 +22,7 @@ def ex5():
 
 
 def ex6():
-    print("TODO: Ex. 6...")
+    slice_it()
 
 
 def ex7():
@@ -93,3 +93,8 @@ def replace_period():
     sentence = "Test.  This is a test.  Testing."
     replace = sentence.replace(".", "!")
     print(replace)
+
+def slice_it():
+    array = ["this", "is", "another", "test"]
+    r = "".join(s[:2] for s in array)
+    print(r)
