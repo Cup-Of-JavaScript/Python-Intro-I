@@ -18,7 +18,7 @@ def ex4():
 
 
 def ex5():
-    print("TODO: Ex. 5...")
+    replace_period()
 
 
 def ex6():
@@ -88,3 +88,8 @@ def count_words():
     sentence = input("Enter a sentence: ")
     count = len(sentence.split())
     print(f'There are {count} words')
+
+def replace_period():
+    sentence = "Test.  This is a test.  Testing."
+    replace = sentence.replace(".", "!")
+    print(replace)
