@@ -83,8 +83,10 @@ def hello_world(x):
 def array_to_string(array):
     string = ''
     for numbers in array:
-        string += ''.join(str(numbers) for numbers in array)
-        return string
+        string += str(numbers)
+    return string
+
+
 
 
 
