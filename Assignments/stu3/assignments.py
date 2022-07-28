@@ -10,7 +10,9 @@ def ex1():
 
 
 def ex2():
-    print("TODO: Ex. 2...")
+    array = [1, 2, 3]
+    result = array_to_string(array)
+    print(result)
 
 
 def ex3():
