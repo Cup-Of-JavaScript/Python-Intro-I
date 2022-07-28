@@ -28,7 +28,9 @@ def ex4():
 
 
 def ex5():
-    print("TODO: Ex. 5...")
+    sentence = "Test.  This is a test.  Testing."
+    sentence2 = replace_period(sentence, "!")
+    print(sentence2)
 
 
 def ex6():
@@ -96,3 +98,7 @@ def add_numbers(array):
 def count_words(sentence):
     word_count = "Number of words: "
     return f'{word_count}{len(sentence.split())}'
+
+def replace_period(sentence, x):
+    punct_replacement = sentence.maketrans(".", "!")
+    return sentence.translate(punct_replacement)
