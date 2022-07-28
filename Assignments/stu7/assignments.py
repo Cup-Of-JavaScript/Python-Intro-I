@@ -88,7 +88,7 @@ def array_to_string(array):
 #ex3
 def add_numbers(array):
     result = 0
-    for i in float(array):
-       result += i(0)
+    for i in (array):
+       result += float(i)
     print(result)
 
