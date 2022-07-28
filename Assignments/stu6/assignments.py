@@ -1,22 +1,16 @@
-#
-# File: assignments.py
-# Date: 7/3/2022
-# Desc: Intro Python I
-#
-
-
 def ex1():
     hello_world()
 
 
 def ex2():
+
     array = [1, 2, 3]
     array_to_string(array)
 
 
 
 def ex3():
-    print("TODO: Ex. 3...")
+    add_numbers()
 
 
 def ex4():
@@ -70,11 +64,23 @@ def ex15():
 #
 # Place your functions here...
 #
-def array_to_string(array):
-    result = ' '.join(str(x) for x in array)
-    print(result)
 
 def hello_world():
     hello_world = range(3)
     for i in hello_world:
         print("Hello World from Python")
+
+
+def array_to_string():
+    array = [1, 2, 3]
+    x = ' '.join(str(s) for s in array)
+    print(x)
+
+def add_numbers():
+    array = [1.0, 1.1, "1"]
+    total = 0
+    for x in array:
+        total += float(x)
+    print(total)
+
+
