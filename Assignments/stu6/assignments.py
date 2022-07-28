@@ -26,7 +26,7 @@ def ex6():
 
 
 def ex7():
-    print("TODO: Ex. 7...")
+    calc_total()
 
 
 def ex8():
@@ -98,3 +98,10 @@ def slice_it():
     array = ["this", "is", "another", "test"]
     r = "".join(s[:2] for s in array)
     print(r)
+
+def calc_total():
+    array = [2.00, 4.00, 4.00]
+    tax = "35%"
+    total = "${:,.2f}".format((1+((float(tax[:2]))/100)) * (float(sum(array))))
+    print(total)
+
