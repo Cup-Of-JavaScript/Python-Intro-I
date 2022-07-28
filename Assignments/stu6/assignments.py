@@ -6,18 +6,22 @@
 
 
 def ex1():
-    print("TODO: Ex. 1...")
+    hello_world = range(3)
+    for i in hello_world:
+        print("Hello World from Python")
 
 
 def ex2():
-    print("TODO: Ex. 2...")
+    array = [1, 2, 3]
+    x = ' '.join(str(s) for s in array)
+    print(x)
+
 
 
 def ex3():
-    print("TODO: Ex. 3...")
 
 
-def ex4():
+ def ex4():
     print("TODO: Ex. 4...")
 
 
@@ -69,3 +73,15 @@ def ex15():
 # Place your functions here...
 #
 
+# def calc_sum(shopping_cart):
+#     retval = 0
+#     for i in shopping_cart:
+#         retval += i["price"]
+#     return retval
+#
+#
+# shopping_cart = [
+#     {"item_id": "1", "name": "socks", "price": 10.00},
+#     {"item_id": "2", "name": "boots", "price": 60.00},
+#     {"item_id": "3", "name": "pants", "price": 30.00}
+# ]
