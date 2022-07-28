@@ -5,13 +5,12 @@
 #
 
 
-def ex1():
+def hello_world():
     hello_world = range(3)
     for i in hello_world:
         print("Hello World from Python")
 
-
-def ex2():
+def array_to_string():
     array = [1, 2, 3]
     x = ' '.join(str(s) for s in array)
     print(x)
