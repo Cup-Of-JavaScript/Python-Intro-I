@@ -53,8 +53,8 @@ def ex9():
 
 
 def ex10():
-    print("TODO: Ex. 10...")
-
+    result = calculator()
+    print(result)
 
 def ex11():
     print("TODO: Ex. 11...")
@@ -140,3 +140,34 @@ def vowel_counter (sentence):
         if char in "aeiouAEIOU":
             num_vowels = num_vowels+1
     print(f"Number of vowels: {num_vowels}")
+
+
+def calculator():
+    def add(x, y):
+        return x + y
+    def subtract(x, y):
+        return x - y
+    def multiply(x, y):
+        return x * y
+    def divide(x, y):
+        return x / y
+
+    while True:
+
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
+        choice = input("Enter operation (+, *, /, -): ")
+
+        if choice == '+':
+            print(add(num1, num2))
+
+        elif choice == '*':
+            print(multiply(num1, num2))
+
+        elif choice == '/':
+            print(divide(num1, num2))
+
+        elif choice == '-':
+            print(subtract(num1, num2))
+        else:
+            print("Invalid Input")
