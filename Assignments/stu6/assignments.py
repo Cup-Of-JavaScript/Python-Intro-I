@@ -26,15 +26,17 @@ def ex6():
 
 
 def ex7():
-    print("TODO: Ex. 7...")
+    array = [2.00, 4.00, 4.00]
+    calc_total(array)
 
 
 def ex8():
-    print("TODO: Ex. 8...")
-
+    c_to_f()
+    f_to_c()
 
 def ex9():
     print("TODO: Ex. 9...")
+
 
 
 def ex10():
@@ -98,3 +100,52 @@ def slice_it():
     array = ["this", "is", "another", "test"]
     r = "".join(s[:2] for s in array)
     print(r)
+
+def calc_total(array):
+    tax = "35%"
+    total = 0
+    for x in array:
+        total += float(x)
+        sum = "${:,.2f}".format((1+((float(tax[:2]))/100)) * total)
+    print(sum)
+
+def c_to_f():
+    ce = input("Enter temperature in Celsius: ")
+    c2f = (int(ce) * (9/5)) + 32
+    print(f'{ce} is equals to {c2f} degrees Farenheit')
+
+
+def f_to_c():
+    fa= input("Enter temperature in Fahrenheit: ")
+    f2c = (int(fa) - 32) * (5/9)
+    print(f'{fa} degrees Fahrenheit is {f2c} degrees Celsius')
+
+
+
+
+
+def iga():
+    car_list = [
+        {
+            "car_id": 1,
+            "color": "red",
+            "data": "Cost: 20000"
+        },
+        {
+            "car_id": 2,
+            "color": "red",
+            "data": "Cost: 30000"
+        },
+        {
+            "car_id": 3,
+            "color": "yellow",
+            "data": "Cost: 30000"
+        }
+    ]
+
+    total = 0
+    for x in car_list:
+        if x['color'] == "red":
+            result = int(x['data'][6:])
+            total += result
+    print(total)
