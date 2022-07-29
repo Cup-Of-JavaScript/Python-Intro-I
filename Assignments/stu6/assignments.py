@@ -35,7 +35,7 @@ def ex8():
     f_to_c()
 
 def ex9():
-    print("TODO: Ex. 9...")
+    vowel_counter()
 
 
 
@@ -121,6 +121,15 @@ def f_to_c():
     print(f'{fa} degrees Fahrenheit is {f2c} degrees Celsius')
 
 
+def vowel_counter():
+    sentence = input("Enter a sentence: ")
+    sentence.lower()
+    counter = 0
+    for x in sentence:
+        if(x == 'a'or x == 'e' or x == 'i' or x == 'o' or x == 'u'):
+            counter = counter + 1
+    print(f'Number of vowels: {counter}')
+
 
 
 
@@ -146,6 +155,5 @@ def iga():
     total = 0
     for x in car_list:
         if x['color'] == "red":
-            result = int(x['data'][6:])
-            total += result
+            total += int(x['data'][6:])
     print(total)
