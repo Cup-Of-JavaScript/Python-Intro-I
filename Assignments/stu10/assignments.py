@@ -37,7 +37,9 @@ def ex6():
 
 
 def ex7():
-    print("TODO: Ex. 7...")
+    array = [2.00, 4.00, 4.00]
+    tax = "10%"
+    calc_total(array, tax)
 
 
 def ex8():
@@ -110,3 +112,12 @@ def replace_period(sentence):
 def slice_it(array):
     r = "".join(i[:2] for i in array)
     print(r)
+
+#ex7
+def calc_total(array, tax):
+    res = 0
+    for i in array:
+        res += float(i)
+    number = res * int(tax[:1])*.10
+    dollar_number = "${:,.2f}".format(number + res)
+    print(dollar_number)
