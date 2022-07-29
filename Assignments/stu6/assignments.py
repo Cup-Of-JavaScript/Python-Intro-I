@@ -26,7 +26,8 @@ def ex6():
 
 
 def ex7():
-    calc_total()
+    array = [2.00, 4.00, 4.00]
+    calc_total(array)
 
 
 def ex8():
@@ -97,12 +98,11 @@ def replace_period():
 
 def slice_it():
     array = ["this", "is", "another", "test"]
-    r = "".join(s[2:] for s in array)
+    r = "".join(s[:2] for s in array)
     print(r)
 
-def calc_total():
-    array = [2.00, 4.00, 4.00]
-    tax = "10%"
+def calc_total(array):
+    tax = "35%"
     total = 0
     for x in array:
         total += float(x)
@@ -124,4 +124,28 @@ def f_to_c():
 
 
 
+def iga():
+    car_list = [
+        {
+            "car_id": 1,
+            "color": "red",
+            "data": "Cost: 20000"
+        },
+        {
+            "car_id": 2,
+            "color": "red",
+            "data": "Cost: 30000"
+        },
+        {
+            "car_id": 3,
+            "color": "yellow",
+            "data": "Cost: 30000"
+        }
+    ]
 
+    total = 0
+    for x in car_list:
+        if x['color'] == "red":
+            result = int(x['data'][6:])
+            total += result
+    print(total)
