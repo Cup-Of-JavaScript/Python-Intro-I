@@ -42,7 +42,14 @@ def ex5():
 
 
 def ex6():
-    print("TODO: Ex. 6...")
+    array = ["this", "is", "another", "test"]
+    r = slice_it(array)
+    print(r)
+
+
+
+
+
 
 
 def ex7():
@@ -111,6 +118,24 @@ def count_words(sentence):
 def replace_period(sentence):
     retval = sentence.replace (".", "!")
     return retval
+
+def slice_it(array):
+    retval=""
+    for i in array:
+        retval += (str(i[:2]))
+    return retval
+
+
+
+
+     # retval = str(array[:2])
+     # return retval
+
+
+
+
+
+
 
 
 
