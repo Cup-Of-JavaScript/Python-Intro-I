@@ -26,15 +26,16 @@ def ex6():
 
 
 def ex7():
-    print("TODO: Ex. 7...")
+    calc_total()
 
 
 def ex8():
-    print("TODO: Ex. 8...")
-
+    c_to_f()
+    f_to_c()
 
 def ex9():
     print("TODO: Ex. 9...")
+
 
 
 def ex10():
@@ -96,5 +97,31 @@ def replace_period():
 
 def slice_it():
     array = ["this", "is", "another", "test"]
-    r = "".join(s[:2] for s in array)
+    r = "".join(s[2:] for s in array)
     print(r)
+
+def calc_total():
+    array = [2.00, 4.00, 4.00]
+    tax = "10%"
+    total = 0
+    for x in array:
+        total += float(x)
+        sum = "${:,.2f}".format((1+((float(tax[:2]))/100)) * total)
+    print(sum)
+
+def c_to_f():
+    ce = input("Enter temperature in Celsius: ")
+    c2f = (int(ce) * (9/5)) + 32
+    print(f'{ce} is equals to {c2f} degrees Farenheit')
+
+
+def f_to_c():
+    fa= input("Enter temperature in Fahrenheit: ")
+    f2c = (int(fa) - 32) * (5/9)
+    print(f'{fa} degrees Fahrenheit is {f2c} degrees Celsius')
+
+
+
+
+
+
