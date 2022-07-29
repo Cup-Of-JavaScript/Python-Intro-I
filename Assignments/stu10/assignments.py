@@ -50,7 +50,8 @@ def ex8():
 
 
 def ex9():
-    print("TODO: Ex. 9...")
+    sentence = "This is a test"
+    vowel_counter(sentence)
 
 
 def ex10():
@@ -134,3 +135,13 @@ def c_to_f(cel):
 def f_to_c(fah):
     result = int((fah - 32) * 5/9)
     print(f"{fah} degrees Fahrenheit is {result} degrees Celsius.")
+
+
+#ex9
+def vowel_counter(sentence):
+    vowel_set = {'a', 'e', 'i', 'o', 'u'}
+    vowels=0
+    for char in sentence:
+        if char in vowel_set:
+            vowels = vowels+1
+    print(f"Number of vowels: {vowels}")
