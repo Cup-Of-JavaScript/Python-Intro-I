@@ -44,7 +44,8 @@ def ex10():
 
 
 def ex11():
-    print("TODO: Ex. 11...")
+    sentence = "This is a test"
+    diagonal_printer(sentence)
 
 
 def ex12():
@@ -73,8 +74,7 @@ def hello_world():
         print("Hello World from Python")
 
 
-def array_to_string():
-    array = [1, 2, 3]
+def array_to_string(array):
     x = ' '.join(str(s) for s in array)
     print(x)
 
@@ -150,7 +150,9 @@ def calculator():
     if answer3 == '-':
         print(answer1 - answer2)
 
-
+def diagonal_printer(sentence):
+    for i in range(len(sentence)):
+        print(' '*i, sentence[i])
 
 
 
