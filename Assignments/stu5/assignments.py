@@ -60,7 +60,14 @@ def ex7():
 
 
 def ex8():
-    print("TODO: Ex. 8...")
+    c = -6
+    f = 22
+    f_to_c(22)
+    c_to_f(-6)
+
+
+
+
 
 
 def ex9():
@@ -137,6 +144,19 @@ def calc_total(array, tax):
         number = result * int(tax[:1])*0.10
         dollar_number = "${:,.2f}".format(number + result)
     print(dollar_number)
+
+
+def c_to_f(c):
+
+     f = int((c * 9/5) + 32)
+     print( f"{c} degrees Celsius is {f} degrees Fahrenheit.")
+
+def f_to_c(f):
+    c = int((f - 32) * 5/9)
+    print( f"{f} degrees Fahrenheit is {c} degrees Celsius.")
+
+
+
 
 
 
