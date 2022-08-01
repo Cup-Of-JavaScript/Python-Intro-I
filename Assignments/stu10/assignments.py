@@ -65,7 +65,8 @@ def ex11():
 
 
 def ex12():
-    print("TODO: Ex. 12...")
+    words = "three three three two two one"
+    word_histogram(words)
 
 
 def ex13():
@@ -188,6 +189,26 @@ def diagonal_printer(text):
     for i in text:
         for i in range(len(text)):
             print(' '*i, text[i])
+
+
+
+#ex12
+def word_histogram(words):
+
+    w = {'one' : 0,
+         'two' : 0,
+         'three': 0
+         }
+    words = words.split()
+    for i in words:
+        if i == 'one':
+            w['one'] = w.get('one', 0) +1
+        elif i == 'two':
+            w['two'] = w.get('two', 0) +1
+        elif i == 'three':
+            w['three'] = w.get('three', 0) +1
+    print(w)
+
 
 
 
