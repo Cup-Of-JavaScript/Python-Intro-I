@@ -10,15 +10,19 @@ def ex1():
 
 
 def ex2():
-    print("TODO: Ex. 2...")
+    array = [1, 2, 3]
+    array_to_string(array)
 
 
 def ex3():
-    print("TODO: Ex. 3...")
+    array = [1.0, 1.1, "1"]
+    add_numbers(array)
 
 
 def ex4():
-    print("TODO: Ex. 4...")
+    sentence = input("Enter sentence: ")
+    num_words = count_words(sentence)
+    print(num_words)
 
 
 def ex5():
@@ -73,3 +77,22 @@ def hello_world(a):
     b = int(a)
     for a in range(b):
         print("Hello World from Python!")
+
+
+def array_to_string(array):
+    result = ' '.join([str(i) for i in array])
+    print(result)
+
+
+def add_numbers(array):
+    retval = 0
+    for a in array:
+        retval += float(a)
+        print(retval)
+
+
+def count_words(sentence):
+    retval = len(sentence.split())
+    return retval
+
+
