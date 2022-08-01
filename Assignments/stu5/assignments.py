@@ -3,26 +3,42 @@
 # Date: 7/3/2022
 # Desc: Intro Python I
 #
+from typing import Any
 
 
 def ex1():
-    print("TODO: Ex. 1...")
+    hello_world("3")
 
 
 def ex2():
-    print("TODO: Ex. 2...")
+    array = [1, 2, 3]
+    result = array_to_string(array)
+    print(result)
+
+
+
 
 
 def ex3():
-    print("TODO: Ex. 3...")
+    array = [1.0, 1.1, "1"]
+    add_numbers(array)
+
+
 
 
 def ex4():
-    print("TODO: Ex. 4...")
+    sentence = input("Enter sentence: ")
+    num_words = count_words(sentence)
+    print(num_words)
+
 
 
 def ex5():
-    print("TODO: Ex. 5...")
+    sentence = "Test.  This is a test.  Testing."
+    sentence2 = replace_period(sentence)
+    print(sentence2)
+
+
 
 
 def ex6():
@@ -68,4 +84,45 @@ def ex15():
 #
 # Place your functions here...
 #
+
+def hello_world(x):
+    i =int(x)
+    for i in range(i):
+        print("Hello World from Python!")
+
+def array_to_string(array):
+    string = ''
+    for numbers in array:
+        string += str(numbers)
+    return string
+
+
+
+def add_numbers(array):
+    sum =0
+    for numbers in array:
+        sum += float(numbers)
+    print(sum)
+
+def count_words(sentence):
+     retval= len(sentence.split())
+     return retval
+
+def replace_period(sentence):
+    retval = sentence.replace (".", "!")
+    return retval
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -9,6 +9,7 @@ def ex1():
     hello_world("3")
 
 
+
 def ex2():
     array = [1, 2, 3]
     array_to_string(array)
@@ -36,15 +37,20 @@ def ex6():
 
 
 def ex7():
-    print("TODO: Ex. 7...")
-
+    array = [2.00, 4.00, 4.00]
+    tax = "10%"
+    calc_total(array, tax)
 
 def ex8():
-    print("TODO: Ex. 8...")
+    far = 22
+    celc = -6
+    f_to_c(far)
+    c_to_f(celc)
 
 
 def ex9():
-    print("TODO: Ex. 9...")
+    sentence = "This is a test"
+    vowel_counter(sentence)
 
 
 def ex10():
@@ -74,6 +80,32 @@ def ex15():
 #
 # Place your functions here...
 #
+
+def vowel_counter(sentence):
+    num_vowels=0
+    for char in sentence:
+        if char in "aeiouAEIOU":
+            num_vowels = num_vowels+1
+    print(f"Number of vowels: {num_vowels}")
+def f_to_c (far):
+
+    result = int((far - 32) * 5.0/9.0)
+    print(f"{far} degrees Fahrenheit is {result} degrees Celsius.")
+
+def c_to_f (celc):
+
+    result = int(9.0/5.0 * celc + 32)
+    print(f"{celc} degrees Celsius is {result} degrees Fahrenheit.")
+
+
+def calc_total(array, tax):
+    result = 0
+    for x in array:
+        result += float(x)
+    number = result * int(tax[:1])*.10
+    dollar_number = "${:,.2f}".format(number + result)
+    print(dollar_number)
+
 def slice_it(array):
     slice = "".join(i[:2] for i in array)
     print(slice)
@@ -101,6 +133,7 @@ def add_numbers(array):
 def array_to_string(array):
     result = ' '.join(str(x) for x in array)
     print(result)
+
 
 
 

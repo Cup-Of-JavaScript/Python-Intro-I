@@ -15,28 +15,36 @@ def ex2():
 
 
 def ex3():
-    print("TODO: Ex. 3...")
+    array = [1.0, 1.1, "1"]
+    add_numbers(array)
 
 
 def ex4():
-    print("TODO: Ex. 4...")
+    sentence = input("Enter sentence: ")
+    count_words(sentence)
 
 
 def ex5():
-    print("TODO: Ex. 5...")
+    sentence = "Test.  This is a test.  Testing."
+    replace_period(sentence)
 
 
 def ex6():
-    print("TODO: Ex. 6...")
+    array = ["this", "is", "another", "test"]
+    slice_it(array)
 
 
 def ex7():
-    print("TODO: Ex. 7...")
+    array = [2.00, 4.00, 4.00]
+    tax = "10%"
+    calc_total(array, tax)
 
 
 def ex8():
-    print("TODO: Ex. 8...")
-
+    faren = 22
+    celc = -6
+    f_to_c(faren)
+    c_to_f(celc)
 
 def ex9():
     print("TODO: Ex. 9...")
@@ -75,6 +83,49 @@ def hello_world(y):
     for x in range(x):
         print("Hello World from Python!")
 
+
 def array_to_string(array):
     result = ' '.join(str(x) for x in array)
     print(result)
+
+
+def add_numbers(array):
+    result = 0
+    for x in array:
+        result += float(x)
+    print(result)
+
+
+def count_words(sentence):
+    num_words = len(sentence.split())
+    print("Number of words: ", num_words)
+
+
+def replace_period(sentence):
+    sentence2 = sentence.replace(".", "!")
+    print(sentence2)
+
+
+def slice_it(array):
+    r = "".join(a[:2] for a in array)
+    print(r)
+
+
+def calc_total(array, tax):
+    result = 0
+    for x in array:
+        result += float(x)
+    number = result * int(tax[:1])*.10
+    dollar_number = "${:,.2f}".format(number + result)
+    print(dollar_number)
+
+
+def f_to_c (faren):
+
+    result = int((faren - 32) * 5.0/9.0)
+    print(f"{faren} degrees Fahrenheit is {result} degrees Celsius.")
+
+def c_to_f (celc):
+
+    result = int(9.0/5.0 * celc + 32)
+    print(f"{celc} degrees Celsius is {result} degrees Fahrenheit.")

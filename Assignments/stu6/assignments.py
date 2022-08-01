@@ -1,32 +1,28 @@
-#
-# File: assignments.py
-# Date: 7/3/2022
-# Desc: Intro Python I
-#
-
-
 def ex1():
-    print("TODO: Ex. 1...")
+    hello_world()
 
 
 def ex2():
-    print("TODO: Ex. 2...")
+
+    array = [1, 2, 3]
+    array_to_string(array)
+
 
 
 def ex3():
-    print("TODO: Ex. 3...")
+    add_numbers()
 
 
 def ex4():
-    print("TODO: Ex. 4...")
+    count_words()
 
 
 def ex5():
-    print("TODO: Ex. 5...")
+    replace_period()
 
 
 def ex6():
-    print("TODO: Ex. 6...")
+    slice_it()
 
 
 def ex7():
@@ -69,3 +65,36 @@ def ex15():
 # Place your functions here...
 #
 
+def hello_world():
+    hello_world = range(3)
+    for i in hello_world:
+        print("Hello World from Python")
+
+
+def array_to_string():
+    array = [1, 2, 3]
+    x = ' '.join(str(s) for s in array)
+    print(x)
+
+def add_numbers():
+    array = [1.0, 1.1, "1"]
+    total = 0
+    for x in array:
+        total += float(x)
+    print(total)
+
+
+def count_words():
+    sentence = input("Enter a sentence: ")
+    count = len(sentence.split())
+    print(f'There are {count} words')
+
+def replace_period():
+    sentence = "Test.  This is a test.  Testing."
+    replace = sentence.replace(".", "!")
+    print(replace)
+
+def slice_it():
+    array = ["this", "is", "another", "test"]
+    r = "".join(s[:2] for s in array)
+    print(r)

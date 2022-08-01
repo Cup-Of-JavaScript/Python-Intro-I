@@ -6,15 +6,18 @@
 
 
 def ex1():
-    print("TODO: Ex. 1...")
+    print(hello_world('3'))
 
 
 def ex2():
-    print("TODO: Ex. 2...")
+    array = [1, 2, 3]
+    print(array_to_string(array))
 
 
 def ex3():
-    print("TODO: Ex. 3...")
+    array = [1.0, 1.1, "1"]
+    result = add_numbers(array)
+    print(result)
 
 
 def ex4():
@@ -68,4 +71,24 @@ def ex15():
 #
 # Place your functions here...
 #
+
+# ex1
+def hello_world (num):
+    i = int(num)
+    for i in range (i):
+        print('Hello World from Python!')
+        # testing branch
+
+#ex2
+def array_to_string(array):
+   result = ' '.join([str(i) for i in array])
+   print(result)
+# print(array_to_string(a))
+
+#ex3
+def add_numbers(array):
+    result = 0
+    for i in (array):
+       result += float(i)
+    print(result)
 
