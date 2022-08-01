@@ -60,7 +60,8 @@ def ex10():
 
 
 def ex11():
-    print("TODO: Ex. 11...")
+    text = "This is a test"
+    diagonal_printer(text)
 
 
 def ex12():
@@ -180,3 +181,30 @@ def calculator():
 
         else:
             print("Invalid Input")
+
+
+#ex11
+def diagonal_printer(text):
+    for i in text:
+        for i in range(len(text)):
+            print(' '*i, text[i])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
