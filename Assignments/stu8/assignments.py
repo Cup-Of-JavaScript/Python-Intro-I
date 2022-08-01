@@ -57,7 +57,8 @@ def ex10():
     print(result)
 
 def ex11():
-    print("TODO: Ex. 11...")
+    sentence = "This is a test"
+    diagonal_printer(sentence)
 
 
 def ex12():
@@ -171,3 +172,11 @@ def calculator():
             print(subtract(num1, num2))
         else:
             print("Invalid Input")
+
+def diagonal_printer(sentence):
+
+    words = str.split(sentence)
+    for w in words:
+        for i in range(len(w)):
+            print(' '*i, w[i])
+
