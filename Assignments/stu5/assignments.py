@@ -81,7 +81,9 @@ def ex11():
     diagonal_printer("This is a test")
 
 def ex12():
-    print("TODO: Ex. 12...")
+    word_histogram(str)
+
+
 
 
 def ex13():
@@ -191,6 +193,21 @@ def diagonal_printer():
     sentence = "This is a test"
     for i in range(len(sentence)):
         print (' '*i, word[i])
+
+
+def word_histogram(str):
+    counts = dict()
+    words = str.split()
+
+    for word in words:
+        if word in counts:
+            counts[word] += 1
+        else:
+            counts[word] = 1
+
+    return counts
+
+print( word_histogram("three three two two two one one one"))
 
 
 

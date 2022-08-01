@@ -7,7 +7,7 @@
 from Assignments.stu8.assignments import *
 
 def main():
-    ex11()  # <== The exercise you are currently working on.
+    ex12()  # <== The exercise you are currently working on.
 
 if __name__ == '__main__':
     main()
