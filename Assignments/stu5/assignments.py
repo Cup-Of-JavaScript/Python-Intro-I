@@ -79,6 +79,7 @@ def ex10():
 
 
 
+
 def ex11():
     print("TODO: Ex. 11...")
 
@@ -162,23 +163,49 @@ def vowel_counter(sentence):
     return vowel
 
 def calculator():
-    num1 = input("Enter number 1: ")
-    num2 = input("Enter number 2: ")
+    def add(x,y):
+        return x+y
+    def subtract(x,y):
+        return x-y
+    def multiply(x,y):
+        return x*y
+    def divide(x,y):
+        return(x/y)
+
+    num1 = float(input("Enter number 1: "))
+    num2 = float(input("Enter number 2: "))
     operator = input("Enter operation (+, *, /, -): ")
 
-    add = int(num1) + int(num2)
-    subtract = int(num1) - int(num2)
-    multiply = int(num1) * int(num2)
-    divide = int(num1)/int(num2)
-
     if operator == '+':
-        return(add)
-    if operator == '-':
-        return(subtract)
-    if operator == '*':
-        return(multiply)
-    if operator == '/':
-        return (divide)
+        # print(num1, "+", num2, "=", add(num1, num2))
+        return( add(num1, num2))
+
+    elif operator == '-':
+         #print(num1, "-", num2, "=", subtract(num1, num2))
+         return(subtract(num1, num2))
+
+    elif operator == '*':
+        #print(num1, "*", num2, "=", multiply(num1, num2))
+        return(multiply(num1, num2))
+
+    elif operator == '/':
+        #print(num1, "/", num2, "=", divide(num1, num2))
+        return(divide(num1, num2))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
