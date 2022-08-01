@@ -47,7 +47,8 @@ def ex7():
 
 
 def ex8():
-    print("TODO: Ex. 8...")
+    print(f_to_c(22))
+    print(c_to_f(-6))
 
 
 def ex9():
@@ -123,3 +124,10 @@ def calc_total(array, tax):
     total = total + (total / x)
     total = "${:,.2f}".format(total)
     return total
+
+def f_to_c(i):
+    celsius = (i - 32) / 1.8
+    return f'{i} {"degrees Fahrenheit is"} {round(celsius)} {"degrees Celsius."}'
+def c_to_f(x):
+    fahrenheit = round(x * 1.8) + 32
+    return f'{x} {"degrees Celsius is"} {round(fahrenheit)} {"degrees Fahrenheit."}'
