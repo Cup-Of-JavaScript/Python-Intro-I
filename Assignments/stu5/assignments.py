@@ -77,12 +77,8 @@ def ex10():
         print(result)
         break
 
-
-
-
 def ex11():
-    print("TODO: Ex. 11...")
-
+    diagonal_printer("This is a test")
 
 def ex12():
     print("TODO: Ex. 12...")
@@ -191,6 +187,10 @@ def calculator():
     elif operator == '/':
         #print(num1, "/", num2, "=", divide(num1, num2))
         return(divide(num1, num2))
+def diagonal_printer():
+    sentence = "This is a test"
+    for i in range(len(sentence)):
+        print (' '*i, word[i])
 
 
 
