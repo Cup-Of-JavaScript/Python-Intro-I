@@ -26,7 +26,9 @@ def ex4():
 
 
 def ex5():
-    print("TODO: Ex. 5...")
+    sentence = "Test.  This is a test.  Testing."
+    sentence2 = replace_period(sentence)
+    print(sentence2)
 
 
 def ex6():
@@ -96,3 +98,6 @@ def count_words(sentence):
     return retval
 
 
+def replace_period(sentence):
+    retval = sentence.replace(".", "!")
+    return retval
