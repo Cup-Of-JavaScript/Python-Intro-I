@@ -4,12 +4,10 @@
 # Desc: Update line 7 with your student Id, update line 11 with the exercise you are working on.
 #
 
-from Assignments.stu1.assignments import *
-
+from Assignments.stu8.assignments import *
 
 def main():
     ex11()  # <== The exercise you are currently working on.
-
 
 if __name__ == '__main__':
     main()
