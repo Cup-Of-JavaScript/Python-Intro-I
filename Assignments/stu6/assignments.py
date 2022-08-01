@@ -40,7 +40,7 @@ def ex9():
 
 
 def ex10():
-    print("TODO: Ex. 10...")
+    calculator()
 
 
 def ex11():
@@ -129,6 +129,54 @@ def vowel_counter():
         if(x == 'a'or x == 'e' or x == 'i' or x == 'o' or x == 'u'):
             counter = counter + 1
     print(f'Number of vowels: {counter}')
+
+def calculator():
+    answer1 = int(input("Enter first number: "))
+    answer2 = int(input("Enter second number: "))
+    answer3 = input("Choose operation: (+, *, /, -): ")
+
+    if answer3 == '+':
+        print(answer1 + answer2)
+
+    if answer3 == '*':
+        print(answer1 * answer2)
+
+    if answer3 == '/':
+        if answer2 == 0:
+            print("Cannot divide by zero")
+        else:
+            print(answer1 / answer2)
+
+    if answer3 == '-':
+        print(answer1 - answer2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
