@@ -53,7 +53,10 @@ def ex6():
 
 
 def ex7():
-    print("TODO: Ex. 7...")
+    array = [2.00, 4.00, 4.00]
+    tax = "10%"
+    calc_total(array, tax)
+
 
 
 def ex8():
@@ -86,6 +89,8 @@ def ex14():
 
 def ex15():
     print("TODO: Ex. 15...")
+
+
 
 
 #
@@ -125,11 +130,21 @@ def slice_it(array):
         retval += (str(i[:2]))
     return retval
 
+def calc_total(array, tax):
+    result = 0
+    for x in array:
+        result += float(x)
+        number = result * int(tax[:1])*0.10
+        dollar_number = "${:,.2f}".format(number + result)
+    print(dollar_number)
 
 
 
-     # retval = str(array[:2])
-     # return retval
+
+
+
+
+
 
 
 
