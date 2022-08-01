@@ -65,13 +65,10 @@ def ex8():
     f_to_c(22)
     c_to_f(-6)
 
-
-
-
-
-
 def ex9():
-    print("TODO: Ex. 9...")
+    sentence = "This is a test"
+    num_vowels = vowel_counter(sentence)
+    print(f"Number of vowels: {num_vowels}")
 
 
 def ex10():
@@ -115,8 +112,6 @@ def array_to_string(array):
         string += str(numbers)
     return string
 
-
-
 def add_numbers(array):
     sum =0
     for numbers in array:
@@ -154,6 +149,14 @@ def c_to_f(c):
 def f_to_c(f):
     c = int((f - 32) * 5/9)
     print( f"{f} degrees Fahrenheit is {c} degrees Celsius.")
+
+def vowel_counter(sentence):
+    vowel=0
+    for char in sentence:
+        if char in "aeiouAEIOU":
+            vowel = vowel+1
+    return vowel
+
 
 
 
