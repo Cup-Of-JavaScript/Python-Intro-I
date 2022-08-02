@@ -70,7 +70,8 @@ def ex12():
 
 
 def ex13():
-    print("TODO: Ex. 13...")
+    wordlist = ["Hello", "World", "in", "a", "frame"]
+    frame_it(wordlist)
 
 
 def ex14():
@@ -208,6 +209,17 @@ def word_histogram(words):
         elif i == 'three':
             w['three'] = w.get('three', 0) +1
     print(w)
+
+#ex13
+def frame_it(wordlist):
+    width = 0
+    for i in wordlist:
+        if len(i) > width:
+            width = len(i)
+    print('*'*(width+4))
+    for i in wordlist:
+        print('* ' + i + (width - len(i))*' ' + ' *')
+    print('*'*(width+4))
 
 
 
